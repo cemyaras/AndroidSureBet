@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gri" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/SureBet2Options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:checked="true"
+                android:text="SureBet 2 " />
+
+            <RadioButton
+                android:id="@+id/SureBet3Options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SureBet 3 " />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Oran1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1_2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:text="Oran 1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextColor" />
+
+    <TextView
+        android:id="@+id/Oran2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Oran1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:text="Oran 2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextColor" />
+
+    <TextView
+        android:id="@+id/Bahis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Oran2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:text="Bahis"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextColor" />
+
+    <EditText
+        android:id="@+id/Oran1Text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Oran1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="180dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Oran2Text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Oran2"
+        android:layout_alignLeft="@+id/Oran1Text"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/BahisText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Bahis"
+        android:layout_alignLeft="@+id/Oran1Text"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/Sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bahis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Sonuc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextColor" />
+
+    <TextView
+        android:id="@+id/SonucYuzde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sonuc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Oran1Sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Oran1"
+        android:layout_alignBottom="@+id/Oran1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Oran2Sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Oran2"
+        android:layout_alignBottom="@+id/Oran2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/SonucPara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Sonuc"
+        android:layout_alignBottom="@+id/Sonuc"
+        android:layout_alignLeft="@+id/Bahis"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/CLR2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/SonucYuzde"
+        android:layout_toRightOf="@+id/linearLayout1_2"
+        android:background="@drawable/sample"
+        android:text=" CLR "
+        android:textColor="#cccdcd"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

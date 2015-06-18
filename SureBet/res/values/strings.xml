@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SureBet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="Gri">#353f44 </color>
+    <color name="TextColor">#A5B4B9</color>
+    <color name="EditTextColor">#7A844E</color>
+    <color name="Red">#D03A1C</color>
+    <color name="Green">#47DE30</color>
+
+</resources>
